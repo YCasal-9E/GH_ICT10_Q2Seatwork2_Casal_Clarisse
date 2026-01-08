@@ -36,3 +36,10 @@ def calculateGWA(e):
     display(info, target="diva2", append=False)
     display(summary, target="diva2")
     display(f"General Weighted Average: {gwa}", target="diva2", append=True)
+
+    # If GWA is 75 and above = passed, otherwise = failed
+    if gwa > 74:
+        display("PASSED", target="diva2", append=True)
+    else:
+        display("FAILED", target="diva2", append=True)
+
